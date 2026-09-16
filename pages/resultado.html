@@ -1,0 +1,113 @@
+
+<section class="galeria">
+
+    <h2>EVIDENCIAS</h2>
+
+    <div class="galeria-contenedor">
+
+        <!-- Imagen 1 -->
+        <div class="galeria-item">
+            <h3>ENCUESTA DIAGNOSTICA</h3>
+            <div class="imagen-caja">
+                <img src="img/" alt="Imagen 1">
+            </div>
+        </div>
+
+        <!-- Imagen 2 -->
+        <div class="galeria-item">
+            <h3>EL SEMÁFORO DE LA INFLUENCIA</h3>
+            <div class="imagen-caja">
+                <img src="img/semaforo.jpeg" alt="Imagen 2">
+            </div>
+        </div>
+
+        <!-- Imagen 3 -->
+        <div class="galeria-item">
+            <h3>MI IDENTIDAD,MI DECISIÓN</h3>
+            <div class="imagen-caja">
+                <img src="img/ev2.jpeg" alt="Imagen 3">
+            </div>
+        </div>
+
+        <!-- Imagen 4 -->
+        <div class="galeria-item">
+            <h3>EL CAMINO DE LAS CONSECUENCIAS</h3>
+            <div class="imagen-caja">
+                <img src="imagen4.jpg" alt="Imagen 4">
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<style>
+    .galeria {
+        width: 90%;
+        max-width: 1200px;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    .galeria > h2 {
+        font-size: 30px;
+        margin-bottom: 35px;
+        color:#2980b9;
+    }
+
+    .galeria-contenedor {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+
+    .galeria-item {
+        background-color: white;
+        padding: 18px;
+        border-radius: 15px;
+        box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+        border: 1px solid #ddd;
+    }
+
+    .galeria-item h3 {
+        margin-top: 0;
+        margin-bottom: 15px;
+        color: #333;
+        font-size: 19px;
+    }
+
+    .imagen-caja {
+        width: 100%;
+        height: 220px;
+        border-radius: 10px;
+        overflow: hidden;
+        background-color: #f1f1f1;
+    }
+
+    .imagen-caja img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.3s ease;
+    }
+
+    /* Efecto al pasar el mouse */
+    .imagen-caja img:hover {
+        transform: scale(1.05);
+    }
+
+    /* Tablets */
+    @media (max-width: 900px) {
+        .galeria-contenedor {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    /* Celulares */
+    @media (max-width: 550px) {
+        .galeria-contenedor {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>

@@ -1,0 +1,94 @@
+<section class="justificacion">
+    <div class="caja-justificacion">
+
+        <!-- Imagen -->
+        <div class="imagen-justificacion">
+            <img src="img/presion.png" alt="Imagen de la justificación">
+        </div>
+
+        <!-- Texto -->
+        <div class="texto-justificacion">
+            <h2>JUSTIFICACIÓN</h2>
+
+            <p>
+           El presente proyecto busca comprender por qué los estudiantes de grado octavo adoptan gustos y comportamientos de sus compañeros para sentirse aceptados dentro de un grupo. Durante la adolescencia, los jóvenes se encuentran en un proceso de construcción de identidad, donde la influencia social juega un papel importante en sus decisiones y en la forma en que se perciben a sí mismos.
+
+Esta investigación es importante porque permite analizar cómo la presión de grupo puede afectar la autoestima, la autonomía y la toma de decisiones de los estudiantes. Además, ayuda a identificar las consecuencias de este comportamiento, tanto positivas como negativas, en su desarrollo personal.
+
+Asimismo, el proyecto pretende generar conciencia en la comunidad educativa sobre la importancia de promover el respeto, la aceptación y la diversidad, creando un ambiente donde los estudiantes puedan ser auténticos sin sentirse presionados a cambiar. De esta manera, se contribuye al fortalecimiento de la identidad personal y a una mejor convivencia escolar.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<style>
+    .justificacion {
+        display: flex;
+        justify-content: center;
+        padding: 50px 20px;
+    }
+
+    .caja-justificacion {
+        width: 85%;
+        max-width: 1000px;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border-radius: 18px;
+        overflow: hidden;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+        border: 1px solid #ddd;
+    }
+
+    .imagen-justificacion {
+        width: 40%;
+        height: 300px;
+    }
+
+    .imagen-justificacion img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .texto-justificacion {
+        width: 60%;
+        padding: 35px;
+    }
+
+    .texto-justificacion h2 {
+        text-align: center;
+        color: #4788e9;
+        margin-bottom: 20px;
+    }
+
+    .texto-justificacion p {
+        color:black;
+        font-size: 17px;
+        line-height: 1.7;
+        text-align: justify;
+    }
+
+    /* Adaptación para celulares */
+    @media (max-width: 700px) {
+        .caja-justificacion {
+            flex-direction: column;
+        }
+
+        .imagen-justificacion,
+        .texto-justificacion {
+            width: 100%;
+        }
+
+        .imagen-justificacion {
+            height: 230px;
+        }
+
+        .texto-justificacion {
+            padding: 25px;
+            box-sizing: border-box;
+        }
+    }
+</style>

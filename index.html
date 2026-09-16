@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootsrapV5.3.2.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+   <div id="loginScreen" class="login-screen">
+
+  <div class="login-box">
+
+    <h1 class="text-title text-center mb-4">
+      Bienvenido
+    </h1>
+    <p></p>
+    <img src="img/logo1.png" width="200px" height="200px">
+
+    <form id="formLogin">
+
+      <input
+        type="text"
+        id="inputNombre"
+        class="form-control mb-3"
+        placeholder="Ingrese su nombre">
+
+      <button type="submit" class="btn-temas w-100">
+        Ingresar
+      </button>
+
+    </form>
+    <div id="alertContainer"></div>
+
+  </div>
+
+</div>
+
+<div id="appContent" style="display:none;">
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="javascript:cargarpagina('home.html')"><img class="logo" src="img/logo1.png" alt=""
+            srcset=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+           
+<!-- Dropdown Cotexto -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+             Contexto
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="javascript:cargarpagina('planteamiento.html')">Plantemiento de problema</a></li>
+              <li><a class="dropdown-item" href="javascript:cargarpagina('objetivo.html')">Objetivos</a></li>
+               <li><a class="dropdown-item" href="javascript:cargarpagina('resumen.html')">Resumen</a></li>
+              <li><a class="dropdown-item" href="javascript:cargarpagina('marco.html')">Marco de Referencia</a></li>
+             
+            </ul>
+          </li>
+
+          <!-- Dropdown acerca del proyecto -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+              Ruta del proyecto
+            </a>
+
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="javascript:cargarpagina('introduccion.html')">Introducción</a></li>
+              <li><a class="dropdown-item" href="javascript:cargarpagina('justificacion.html')">Justificación</a></li>
+              <li><a class="dropdown-item" href="javascript:cargarpagina('resultado.html')">Evidencias</a></li>
+              <li><a class="dropdown-item" href="javascript:cargarpagina('conclusion.html')">Conclusiones</a></li>
+            </ul>
+          </li>
+
+         
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:cargarpagina('nosotros.html')">Actividades</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:cargarpagina('juego.html')">Juego</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="javascript:cargarpagina('creditos.html')">Créditos</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <section id="contenido">
+
+<div class="page-card">
+   
+
+    <p>
+        Bienvenido/a  <strong id="nombre"></strong> a este proyecto educativo. 
+    </p>
+
+    <p>
+        Utiliza el menú de navegación para explorar cada uno de los apartados.
+    </p>
+
+    <div class="alert alert-info mt-4">
+        Este sitio fue diseñado para facilitar la consulta y presentación del proyecto.
+    </div>
+</div>
+  </section>
+  <footer class="footer">
+    <p class="mb-0"><span id="year"></span>Gimnasio Santander de Tunja-Todos los derechos reservados Natalia
+      Fonseca-Taliana Porras</p>
+    <img src="img/escudo.png" alt="" class="img-logo">
+
+  </footer>
+  </div>
+</body>
+
+
+
+</html>
